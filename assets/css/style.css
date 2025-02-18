@@ -1,12 +1,11 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 /* General styles */
@@ -16,16 +15,15 @@ body {
     flex-direction: column;
     /* Generic project styles */
     color: #3a3a3a;
-    font-family: "Lato", sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 h1, h2, h3 {
-    font-family: "Oswald", sans-serif;
+    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
 }
-
 
 /* Header */
 header {
@@ -57,14 +55,14 @@ header a {
 
 .active {
     border-bottom: 1px solid #3a3a3a;
- }
+}
 
 /* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
     background-color: #ffffff;
     width: 100%;
-    left: 0px;
+    left: 0;
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
@@ -84,7 +82,7 @@ nav {
     font-size: 2rem;
 }
 
- /* Main content */
+/* Main content */
 main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
@@ -115,6 +113,33 @@ main {
     color: #ffffff;
 }
 
+/* Reasons section */
+#reasons {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#reasons h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 280%;
+}
+
+#benefits-physical > div,
+#benefits-mental > div {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+#benefits p {
+    padding: 0 20px;
+}
+
+#benefits hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
@@ -129,7 +154,6 @@ main {
     padding: 5%;
     color: #3a3a3a;
 }
-
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
@@ -155,9 +179,9 @@ main {
     }
 
     #logo {
-    font-size: 280%;
-    line-height: 75px;
-    margin: 0 0.5rem;
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
     }
 
     /* Main content */
@@ -166,17 +190,16 @@ main {
         margin-top: 79px;
     }
 
-   /* Hero */
-   #cover-text {
-    width: 300px;
-    right: 50px;
-   } 
+    /* Hero */
+    #cover-text {
+        width: 300px;
+        right: 50px;
+    }
 }
 
-/* Media query: laptop and larger (992px and up) */
+/* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-
-    #menu a:hover {
+    #menu a:hover{
         border-bottom: 1px solid #3a3a3a;
     }
 }
